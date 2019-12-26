@@ -7,7 +7,13 @@ imagesc(ORG); axis image;
 によって，原画像を読み込み，表示した結果を図1．に示す．
 
 ![alt](/image/1-0.png)
+<<<<<<< HEAD
 <p align="center">図1 原画像</p>
+=======
+<div style="text-align: center;">
+図1．原画像
+</div>
+>>>>>>> 82f9f328a2adba39f70141f0efd130430ca43e1d
 
 
 原画像を1/2サンプリングするには画像を1/2倍に縮小した後，2倍にすればよい．なお，拡大する際には，単純補間するために「box」オプションを設定する．
