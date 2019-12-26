@@ -19,7 +19,7 @@ IMG2 = imresize(IMG,2,'box');
 ```
 1/2サンプリングの結果を図2．に示す．
 ![alt](/image/1-1.png)
-<div style="text-align: center;">
+##<div style="text-align: center;">
 図2．1/2サンプリング
 </div>
 
@@ -30,7 +30,7 @@ IMG2 = imresize(IMG,2,'box');
 ```
 なする．1/4サンプリングの結果を図3．に示す．
 ![alt](/image/1-2.png)
-<div style="text-align: center;">
+##<div style="text-align: center;">
 図2．1/4サンプリング
 </div>
 1/8サンプリングから1/32サンプリングは，
@@ -40,17 +40,17 @@ IMG2 = imresize(IMG,2,'box');
 ```
 を繰り返す．サンプリングの結果を図4．~図6．に示す．
 ![alt](/image/1-3.png)
-<div style="text-align: center;">
+##<div style="text-align: center;">
 図2．1/8サンプリング
 </div>
 
 ![alt](/image/1-4.png)
-<div style="text-align: center;">
+##<div style="text-align: center;">
 図2．1/16サンプリング
 </div>
 
 ![alt](/image/1-5.png)
-<div style="text-align: center;">
+##<div style="text-align: center;">
 図2．1/32サンプリング
 </div>
 このようにサンプリング幅が大きくなると，モザイク状のサンプリング歪みが発生する．
