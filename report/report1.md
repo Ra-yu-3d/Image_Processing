@@ -1,13 +1,13 @@
 # 標本化間隔と空間解像度
 
 ```
-ORG=imread('https://2.bp.blogspot.com/-QQ8srAulOS4/V49o4upaiZI/AAAAAAAA8Y4/JRGe4Jzla1sYcvqZAVB1SYEskzcDvL8wgCLcB/s800/vr_game_mother.png');
+ORG=imread('../image/original.png');
 imagesc(ORG); axis image;
 ```
 によって，原画像を読み込み，表示した結果を図1．に示す．
 
 ![alt](/image/1-0.png)
-<p align="center">図1 原画像</p>
+<p align="center">図1．原画像</p>
 
 
 原画像を1/2サンプリングするには画像を1/2倍に縮小した後，2倍にすればよい．なお，拡大する際には，単純補間するために「box」オプションを設定する．
