@@ -1,16 +1,16 @@
-% ‰Û‘è‚T@”»•Ê•ªÍ–@
+% èª²é¡Œï¼•ã€€åˆ¤åˆ¥åˆ†ææ³•
 
-% ”»•Ê•ªÍ–@‚ğ—p‚¢‚Ä‰æ‘œ“ñ’l‰»‚¹‚æD
+% åˆ¤åˆ¥åˆ†ææ³•ã‚’ç”¨ã„ã¦ç”»åƒäºŒå€¤åŒ–ã›ã‚ˆï¼
 
-% ‰º‹L‚ÍƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚Å‚ ‚éD
+% ä¸‹è¨˜ã¯ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã§ã‚ã‚‹ï¼
 
-% ‰Û‘èì¬‚É‚ ‚½‚Á‚Ä‚ÍuLennavˆÈŠO‚Ì‰æ‘œ‚ğ—p‚¢‚æD
+% èª²é¡Œä½œæˆã«ã‚ãŸã£ã¦ã¯ã€ŒLennaã€ä»¥å¤–ã®ç”»åƒã‚’ç”¨ã„ã‚ˆï¼
 
 
 
-ORG=imread('https://2.bp.blogspot.com/-QQ8srAulOS4/V49o4upaiZI/AAAAAAAA8Y4/JRGe4Jzla1sYcvqZAVB1SYEskzcDvL8wgCLcB/s800/vr_game_mother.png'); % Œ´‰æ‘œ‚Ì“ü—Í
+ORG=imread('../image/original.png'); % åŸç”»åƒã®å…¥åŠ›
 
-ORG = rgb2gray(ORG); % ƒJƒ‰[‰æ‘œ‚ğ”’•”Z’W‰æ‘œ‚Ö•ÏŠ·
+ORG = rgb2gray(ORG); % ã‚«ãƒ©ãƒ¼ç”»åƒã‚’ç™½é»’æ¿ƒæ·¡ç”»åƒã¸å¤‰æ›
 
 imagesc(ORG); colormap(gray); colorbar;
 
@@ -18,7 +18,7 @@ pause;
 
 
 
-H = imhist(ORG); %ƒqƒXƒgƒOƒ‰ƒ€‚Ìƒf[ƒ^‚ğ—ñƒxƒNƒgƒ‹E‚ÉŠi”[
+H = imhist(ORG); %ãƒ’ã‚¹ãƒˆã‚°ãƒ©ãƒ ã®ãƒ‡ãƒ¼ã‚¿ã‚’åˆ—ãƒ™ã‚¯ãƒˆãƒ«Eã«æ ¼ç´
 
 myu_T = mean(H);
 
@@ -28,25 +28,25 @@ max_thres = 1;
 
 for i=1:255
 
-C1 = H(1:i); %ƒqƒXƒgƒOƒ‰ƒ€‚ğ2‚Â‚ÌƒNƒ‰ƒX‚É•ª‚¯‚é
+C1 = H(1:i); %ãƒ’ã‚¹ãƒˆã‚°ãƒ©ãƒ ã‚’2ã¤ã®ã‚¯ãƒ©ã‚¹ã«åˆ†ã‘ã‚‹
 
 C2 = H(i+1:256);
 
-n1 = sum(C1); %‰æ‘f”‚ÌZo
+n1 = sum(C1); %ç”»ç´ æ•°ã®ç®—å‡º
 
 n2 = sum(C2);
 
-myu1 = mean(C1); %•½‹Ï’l‚ÌZo
+myu1 = mean(C1); %å¹³å‡å€¤ã®ç®—å‡º
 
 myu2 = mean(C2);
 
-sigma1 = var(C1); %•ªU‚ÌZo
+sigma1 = var(C1); %åˆ†æ•£ã®ç®—å‡º
 
 sigma2 = var(C2);
 
-sigma_w = (n1 *sigma1+n2*sigma2)/(n1+n2); %ƒNƒ‰ƒX“à•ªU‚ÌZo
+sigma_w = (n1 *sigma1+n2*sigma2)/(n1+n2); %ï¿½Nï¿½ï¿½ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½Uï¿½ÌZï¿½o
 
-sigma_B = (n1 *(myu1-myu_T)^2+n2*(myu2-myu_T)^2)/(n1+n2); %ƒNƒ‰ƒXŠÔ•ªU‚ÌZo
+sigma_B = (n1 *(myu1-myu_T)^2+n2*(myu2-myu_T)^2)/(n1+n2); %ï¿½Nï¿½ï¿½ï¿½Xï¿½Ô•ï¿½ï¿½Uï¿½ÌZï¿½o
 
 if max_val<sigma_B/sigma_w
 

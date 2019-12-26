@@ -1,20 +1,20 @@
-% �ۑ�S�@�摜�̃q�X�g�O����
+% 課題４　画像のヒストグラム
 
-% ��f�̔Z�x�q�X�g�O�����𐶐�����D
+% 画素の濃度ヒストグラムを生成せよ．
 
-% ���L�̓T���v���v���O�����ł���D
+% 下記はサンプルプログラムである．
 
-% �ۑ�쐬�ɂ������ẮuLenna�v�ȊO�̉摜��p����D
-
-
-
-clear; % �ϐ��̃I�[���N���A
+% 課題作成にあたっては「Lenna」以外の画像を用いよ．
 
 
 
-ORG=imread('https://2.bp.blogspot.com/-QQ8srAulOS4/V49o4upaiZI/AAAAAAAA8Y4/JRGe4Jzla1sYcvqZAVB1SYEskzcDvL8wgCLcB/s800/vr_game_mother.png'); % ���摜�̓���
+clear; % 変数のオールクリア
 
-ORG=rgb2gray(ORG); % �J���[�摜�𔒍��Z�W�摜�֕ϊ�
+
+
+ORG=imread('../image/original.png'); % 原画像の入力
+
+ORG=rgb2gray(ORG); % カラー画像を白黒濃淡画像へ変換
 
 imagesc(ORG); colormap(gray); colorbar;
 
@@ -22,4 +22,4 @@ pause;
 
 
 
-imhist(ORG); % �q�X�g�O�����̕\��
+imhist(ORG); % ヒストグラムを表示

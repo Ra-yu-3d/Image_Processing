@@ -1,31 +1,31 @@
-  
-% ‰Û‘è‚R@è‡’lˆ—
 
-% è‡’l‚ğ4ƒpƒ^[ƒ“İ’è‚µ,è‡’lˆ—‚µ‚½‰æ‘œ‚ğ¦‚¹D
+% èª²é¡Œï¼“ã€€é–¾å€¤å‡¦ç†
 
-% ‰º‹L‚ÍƒTƒ“ƒvƒ‹ƒvƒƒOƒ‰ƒ€‚Å‚ ‚éD
+% é–¾å€¤ã‚’4ãƒ‘ã‚¿ãƒ¼ãƒ³è¨­å®šã—,é–¾å€¤å‡¦ç†ãŸç”»åƒã‚’ç¤ºã›ï¼
 
-% ‰Û‘èì¬‚É‚ ‚½‚Á‚Ä‚ÍuLennavˆÈŠO‚Ì‰æ‘œ‚ğ—p‚¢‚æD
+% ä¸‹è¨˜ã¯ã‚µãƒ³ãƒ—ãƒ«ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã§ã‚ã‚‹ï¼
 
-
-
-clear; % •Ï”‚ÌƒI[ƒ‹ƒNƒŠƒA
+% èª²é¡Œä½œæˆã«ã‚ãŸã£ã¦ã¯ã€ŒLennaã€ä»¥å¤–ã®ç”»åƒã‚’ç”¨ã„ã‚ˆï¼
 
 
 
-ORG=imread('https://2.bp.blogspot.com/-QQ8srAulOS4/V49o4upaiZI/AAAAAAAA8Y4/JRGe4Jzla1sYcvqZAVB1SYEskzcDvL8wgCLcB/s800/vr_game_mother.png'); % Œ´‰æ‘œ‚Ì“ü—Í
-
-ORG= rgb2gray(ORG); % ƒJƒ‰[‰æ‘œ‚ğ”’•”Z’W‰æ‘œ‚Ö•ÏŠ·
+clear; % å¤‰æ•°ã®ã‚ªãƒ¼ãƒ«ã‚¯ãƒªã‚¢
 
 
 
-imagesc(ORG); colormap(gray); colorbar; % ‰æ‘œ‚Ì•\¦
+ORG=imread('../image/original.png'); % åŸç”»åƒã®å…¥åŠ›
+
+ORG= rgb2gray(ORG); % ã‚«ãƒ©ãƒ¼ç”»åƒã‚’ç™½é»’æ¿ƒæ·¡ç”»åƒã¸å¤‰æ›
+
+
+
+imagesc(ORG); colormap(gray); colorbar; % ç”»åƒã®è¡¨ç¤º
 
 pause;
 
 
 
-IMG = ORG > 64; % ‹P“x’l‚ª64ˆÈã‚Ì‰æ‘f‚ğ1C‚»‚Ì‘¼‚ğ0‚É•ÏŠ·
+IMG = ORG > 64; % è¼åº¦å€¤ãŒ64ä»¥ä¸Šã®ç”»ç´ ã‚’1ï¼Œãã®ä»–ã‚’0ã«å¤‰æ›
 
 imagesc(IMG); colormap(gray); colorbar;
 
@@ -33,7 +33,7 @@ pause;
 
 
 
-IMG = ORG > 96; % ‹P“x’l‚ª96ˆÈã‚Ì‰æ‘f‚ğ1C‚»‚Ì‘¼‚ğ0‚É•ÏŠ·
+IMG = ORG > 96; % è¼åº¦å€¤ãŒ96ä»¥ä¸Šã®ç”»ç´ ã‚’1ï¼Œãã®ä»–ã‚’0ã«å¤‰æ›
 
 imagesc(IMG); colormap(gray); colorbar;
 
@@ -41,7 +41,7 @@ pause;
 
 
 
-IMG = ORG > 128; % ‹P“x’l‚ª128ˆÈã‚Ì‰æ‘f‚ğ1C‚»‚Ì‘¼‚ğ0‚É•ÏŠ·
+IMG = ORG > 128; % è¼åº¦å€¤ãŒ128ä»¥ä¸Šã®ç”»ç´ ã‚’1ï¼Œãã®ä»–ã‚’0ã«å¤‰æ›
 
 imagesc(IMG); colormap(gray); colorbar;
 
@@ -49,6 +49,6 @@ pause;
 
 
 
-IMG = ORG > 192; % ‹P“x’l‚ª192ˆÈã‚Ì‰æ‘f‚ğ1C‚»‚Ì‘¼‚ğ0‚É•ÏŠ·
+IMG = ORG > 192; % è¼åº¦å€¤ãŒ192ä»¥ä¸Šã®ç”»ç´ ã‚’1ï¼Œãã®ä»–ã‚’0ã«å¤‰æ›
 
 imagesc(IMG); colormap(gray); colorbar;

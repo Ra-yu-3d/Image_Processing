@@ -1,21 +1,21 @@
-% ‰Û‘è10 ‰æ‘œ‚ÌƒGƒbƒW’Šo 
-% Ÿ‚ÌƒvƒƒOƒ‰ƒ€‚ğQl‚É‚µ‚ÄCƒGƒbƒW’Šo‚ğ‘ÌŒ±‚¹‚æD
-% Še©CLennaˆÈŠO‚Ì‰æ‘œ‚ğ—p‚¢‚æD 
-% —á
+% èª²é¡Œ10 ç”»åƒã®ã‚¨ãƒƒã‚¸æŠ½å‡º
+% æ¬¡ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’å‚è€ƒã«ã—ã¦ï¼Œã‚¨ãƒƒã‚¸æŠ½å‡ºã‚’ä½“é¨“ã›ã‚ˆï¼
+% å„è‡ªï¼ŒLennaä»¥å¤–ã®ç”»åƒã‚’ç”¨ã„ã‚ˆï¼
+% ä¾‹
 
-ORG = imread('https://2.bp.blogspot.com/-QQ8srAulOS4/V49o4upaiZI/AAAAAAAA8Y4/JRGe4Jzla1sYcvqZAVB1SYEskzcDvL8wgCLcB/s800/vr_game_mother.png'); % Œ´‰æ‘œ‚Ì“ü—Í
-ORG = rgb2gray(ORG); %ƒJƒ‰[‚©‚çƒOƒŒƒC‚Ö‚Ì•ÏŠ·
-imagesc(ORG); colormap('gray'); colorbar;% ‰æ‘œ•\¦
-pause; % ˆê’â~
+ORG = imread('../image/original.png'); % åŸç”»åƒã®å…¥åŠ›
+ORG = rgb2gray(ORG); %ã‚«ãƒ©ãƒ¼ã‹ã‚‰ã‚°ãƒ¬ã‚¤ã¸ã®å¤‰æ›
+imagesc(ORG); colormap('gray'); colorbar;%ç”»åƒè¡¨ç¤º
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = edge(ORG,'prewitt'); % ƒGƒbƒW’ŠoiƒvƒŒƒEƒBƒbƒg–@j
-imagesc(IMG); colormap('gray'); colorbar;% ‰æ‘œ•\¦
-pause; % ˆê’â~
+IMG = edge(ORG,'prewitt'); % ã‚¨ãƒƒã‚¸æŠ½å‡º(ãƒ—ãƒ¬ã‚¦ã‚£ãƒƒãƒˆæ³•)
+imagesc(IMG); colormap('gray'); colorbar;% ç”»åƒè¡¨ç¤º
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = edge(ORG,'sobel'); % ƒGƒbƒW’Šoiƒ\ƒxƒ‹–@j
-imagesc(IMG); colormap('gray'); colorbar;% ‰æ‘œ•\¦
-pause; % ˆê’â~
+IMG = edge(ORG,'sobel'); % ã‚¨ãƒƒã‚¸æŠ½å‡º(ã‚½ãƒ™ãƒ«æ³•)
+imagesc(IMG); colormap('gray'); colorbar;% ç”»åƒè¡¨ç¤º
+pause; % ä¸€æ™‚åœæ­¢
 
-IMG = edge(ORG,'canny'); % ƒGƒbƒW’ŠoiƒLƒƒƒj[–@j
-imagesc(IMG); colormap('gray'); colorbar;% ‰æ‘œ•\¦
-pause; % ˆê’â~
+IMG = edge(ORG,'canny'); % ã‚¨ãƒƒã‚¸æŠ½å‡º(ã‚­ãƒ£ãƒ‹ãƒ¼æ³•)
+imagesc(IMG); colormap('gray'); colorbar;% ç”»åƒè¡¨ç¤º
+pause; % ä¸€æ™‚åœæ­¢
